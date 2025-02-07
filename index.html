@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/style.css">
+<title>familia por perros</title>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <h1>¿que tipo de perro eres,y tu familia?</h1>
+      <div id="instruccion">
+        <span>instrucciones :</span>
+        <ol>
+          <li>seleciona la cantidad de familiares </li>
+          <li>escoje el rol de tus fammiliares</li>
+          <li>haz click en enviar</li>
+          <li>obtendras imagenes de tu familia si fueran perros</li>
+        </ol>
+      </div>
+      <form action="" method="get" id="dogForm">
+        <h3>llena los datos</h3>
+        <fieldset>
+          <label for="numFam">numero de familires</label>
+          <select name="numFam" id="numFam">
+            <option value="0">tu solo</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </fieldset>
+
+        <hr />
+        <fieldset>
+          <legend>elige tus familiares</legend>
+          <div id="rolesFam" class="box">
+          </div>
+          <div class="hidden">
+            <label for="ok1">si estas seguros de los roles marca ok</label>
+            <input type="radio" name="ok" id="ok1">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>escribe los nombres de tus familiares</legend>
+          <div class="namesFam">
+
+          </div>
+        </fieldset>
+
+        <input id="one" type="button">enviar</input>
+      </form>
+      <div id="dogImages"></div>
+      <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>
